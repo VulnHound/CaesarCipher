@@ -21,19 +21,6 @@ def banner():
     print("\n" * 3)
 
 
-# Welcome Message
-
-
-def welcome_message():
-    """Function used to display welcome message and accept user input"""
-    print("\n1. Encrypt")
-    print("2. Decrypt")
-    print("3. BruteForce")
-    print("\n0. Quit\n")
-    selection = input("")
-    return selection
-
-
 # Encryption Function
 
 
@@ -81,22 +68,3 @@ def parser_error():
     print("         python " + sys.argv[0] + " -b IHYAUBHAQ")
     sys.exit()
 
-
-# Parse Arguments
-
-
-def parse_args():
-    parser = argparse.ArgumentParser(epilog='\tExample: \r\npython ' + sys.arg[0] + '-e [YOUR MESSAGE] -k [1-25]')
-    group = parser.add_mutually_exclusive_group()
-    group.add_argument('-e', '--encrypt', action="store_true", help="Encrypts the message")
-    group.add_argument('-d', '--decrypt', action="store_true", help="Decrypts the message")
-    parser.add_argument('-k', '--key', help="Key used to encrypt/decrypt message", type=int, choices=[1, 2, 3, 4, 5, 6,
-                                                                                                      7, 8, 9, 10, 11,
-                                                                                                      12, 13, 14, 15,
-                                                                                                      16, 17, 18, 19,
-                                                                                                      20, 21, 22, 23,
-                                                                                                      24, 25])
-    group.add_argument('-b', '--brute', help="Brute force will use all keys for Caesar Cipher")
-    parser.add_argument('-f', '--file', help="Input file to encrypt or decrypt")
-    parser.add_argument('-o', '--outfile', help="Output file to print results out to")
-    parser.add_argument('-h', '--help', help="Typing this gets you this pretty menu")
