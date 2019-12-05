@@ -7,9 +7,17 @@ caesar ciphers.
 - pip3 install -r requirements.txt
 
 # Usage
-- Encrypt
-    - python caesar.py -e vulnhound -k 13
-- Decrypt
-    - python caesar.py -d IHYAUBHAQ -k 13
-- Brute Force
-    - python caesar.py -b IHYAUBHAQ
+- Encrypt:
+    
+    ``python caesar.py -e vulnhound -k 13``
+- Decrypt:
+    
+    ``python caesar.py -d IHYAUBHAQ -k 13``
+- Brute Force:
+    
+    ``python caesar.py -b IHYAUBHAQ``
+
+
+* If Python 3 is not your default interpreter then use: 
+
+    ``python3 caesar.py -e vulnhound -k 13``
