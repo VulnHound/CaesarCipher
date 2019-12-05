@@ -2,9 +2,11 @@ caesar.py is a simple CLI script where you can encrypt, decrypt, and bruteforce 
 caesar ciphers. 
 
 # Installation
-- git clone https://github.com/VulnHound/CaesarCipher.git
-- cd CaesarCipher
-- pip3 install -r requirements.txt
+``git clone https://github.com/VulnHound/CaesarCipher.git``
+
+``cd CaesarCipher``
+
+``pip3 install -r requirements.txt``
 
 # Usage
 - Encrypt:
