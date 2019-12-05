@@ -65,6 +65,6 @@ def parser_error():
     print("-" * 50 + "\n")
     print("Example: python " + sys.argv[0] + " -e vulnhound -k 13")
     print("         python " + sys.argv[0] + " -d IHYAUBHAQ -k 13")
-    print("         python " + sys.argv[0] + " -b IHYAUBHAQ")
+    print("         python " + sys.argv[0] + " -b IHYAUBHAQ\n")
     sys.exit()
 
