@@ -44,6 +44,9 @@ def decrypt(crypt, key):
     print(plaintext)
     print("-" * 30)
 
+    
+# Bruteforce Function    
+    
 
 def brute(crypt):
     """Function to brute-force decryption"""
