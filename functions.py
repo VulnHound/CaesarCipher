@@ -13,7 +13,12 @@ import argparse
 
 def banner():
     """Function used to display banner"""
-    os.system('clear' or 'cls')
+    
+    if os.name == 'nt':
+        os.system('cls')
+    else:
+        os.system('clear')
+        
     custom_fig = Figlet(font='cyberlarge')
     print(custom_fig.renderText('Caesar Cipher'))
     print("version 1.0.0")
