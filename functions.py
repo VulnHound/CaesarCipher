@@ -21,7 +21,7 @@ def banner():
         
     custom_fig = Figlet(font='cyberlarge')
     print(custom_fig.renderText('Caesar Cipher'))
-    print("version 1.0.0")
+    print("version 1.0.1")
     print("by: @VulnHound")
     print("\n" * 3)
 
