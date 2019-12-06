@@ -23,3 +23,13 @@ caesar ciphers.
 * If Python 3 is not your default interpreter then use: 
 
     ``python3 caesar.py -e vulnhound -k 13``
+
+# Notes
+- For multiple word strings use [BACKSLASH] instead of [SPACES]
+
+Example:
+
+    python caesar.py -e I\love\cryptography -k 23
+    
+- The -k, --key argument will only accept key numbers 1-25 due to the 
+    function of the Caesar cipher itself
