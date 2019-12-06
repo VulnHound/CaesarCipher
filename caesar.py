@@ -1,7 +1,7 @@
 """
 Caesar Cipher
 by: @VulnHound
-version 1.0.0
+version 1.0.1
 Created: 11/10/2019
 """
 from functions import *
